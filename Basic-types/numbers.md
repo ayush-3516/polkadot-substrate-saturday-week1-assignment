@@ -149,6 +149,7 @@ output: Success!
 solution: corrected (v == 1579) to (v == 1597)
 ```
 ---
+# Floating-point
 7. Question:
 ```rust
 fn main() {
@@ -190,6 +191,7 @@ fn main() {
 }
 ```
 ---
+# Range
 9. Question:
 ```rust
 // Two goals: 1. Modify assert! to make it work 2. Make println! output: 97 - 122
@@ -272,6 +274,7 @@ fn main() {
 output: Success!
 ```
 ---
+# Computations
 11. Question:
 ```rust
 // Fill the blanks and fix the errors
@@ -303,5 +306,36 @@ fn main() {
 ```
 Answer:
 ```rust
+fn main() {
+    // Integer addition
+    assert!(1u32 + 2 == 3);
 
+    // Integer subtraction
+    assert!(1i32 - 2 == -1);
+    assert!(1i8 - 2 == -1); 
+    
+    assert!(3 * 50 == 150);
+
+    assert!(9 / 3 == 3); // error ! make it work
+
+    assert!(24 % 5 == 4);
+    // Short-circuiting boolean logic
+    assert!(true && false == false);
+    assert!(true || false == true);
+    assert!(!true == false);
+
+    // Bitwise operations
+    println!("0011 AND 0101 is {:04b}", 0b0011u32 & 0b0101);
+    println!("0011 OR 0101 is {:04b}", 0b0011u32 | 0b0101);
+    println!("0011 XOR 0101 is {:04b}", 0b0011u32 ^ 0b0101);
+    println!("1 << 5 is {}", 1u32 << 5);
+    println!("0x80 >> 2 is 0x{:x}", 0x80u32 >> 2);
+}
+output: 
+0011 AND 0101 is 0001
+0011 OR 0101 is 0111
+0011 XOR 0101 is 0110
+1 << 5 is 32
+0x80 >> 2 is 0x20
+solution: added unsigned datatypes where it was needed and boolean values where the answer was needed
 ```
