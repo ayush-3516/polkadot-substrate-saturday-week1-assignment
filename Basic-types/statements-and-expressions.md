@@ -61,6 +61,8 @@ fn main() {
    assert!(v == 3);
    println!("Success!");
 }
+output: Success!
+solution: inserting x in v without semicolon to return x
 ```
 ---
 3. Question: 
@@ -75,7 +77,6 @@ fn main() {
 fn sum(x: i32, y: i32) -> i32 {
     x + y;
 }
-
 ```
 Answer:
 ```rust
@@ -90,7 +91,6 @@ fn sum(x: i32, y: i32) -> i32 {
 }
 
 output: Success!
-
 solution: removed semicolon to return sum
 ```
 ---
