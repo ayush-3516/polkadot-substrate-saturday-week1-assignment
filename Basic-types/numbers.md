@@ -1,5 +1,6 @@
 # Integer
-1. Question: ```rust
+1. Question: 
+```rust
 
 // Remove something to make it work
 fn main() {
@@ -13,7 +14,9 @@ fn main() {
     println!("Success!");
 }
 ```
-Answer: ```rust
+Answer: 
+```rust
 fn main() {
-    
+
 }
+```
