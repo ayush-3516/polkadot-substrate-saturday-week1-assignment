@@ -16,7 +16,16 @@ fn main() {
 ```
 Answer: 
 ```rust
-fn main() {
+fn main(){
+    let x: i32 = 5;
+    let mut y: u32 = 5;
 
+    let z = 10; // Type of z ? 
+
+    println!("Success!");
 }
+
+output: Success!
+solution: removed the y = x; line
 ```
+---
